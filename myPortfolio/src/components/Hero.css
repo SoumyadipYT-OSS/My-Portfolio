@@ -1,0 +1,48 @@
+.crystal-border {
+    border: 2px solid rgba(232, 209, 180, 0.5);
+    background: #ffecd0;
+    box-shadow: 0 0 6px 3px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    border-radius: 6px;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fade-in 2s ease-in-out;
+}
+
+
+@keyframes light-line {
+    0% {
+        background-position: -100%;
+    }
+    100% {
+        background-position: 200%;
+    }
+}
+
+.border-b {
+    position: relative;
+}
+
+.border-b::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0.4%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+    background-size: 200%;
+    animation: light-line 2.2s linear infinite;
+}
