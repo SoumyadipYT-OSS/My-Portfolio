@@ -41,7 +41,7 @@ const Technologies = () => {
     return (
         <div className="border-b border-neutral-800 pb24">
             <h1 className="my-20 text-center text-4xl">Technologies</h1>
-            <div className="flex flex-wrap items-center justify-center gap-8 float-animation">
+            <div className="flex flex-wrap items-center justify-center gap-8 float-animation pb-10">
                 {techs.map((tech, i) => (
                     <div key={i} className={`rounded-2xl border-4 border-neutral-700 p-4 ${tech.bg}`} style={{ '--i': i }}>
                         {tech.logo ? (
