@@ -4,6 +4,7 @@ import { useInView } from 'react-intersection-observer';
 import SOA from '/SOA.png';
 import ABSS from '/ABSS.png';
 
+
 const educationData = [
     {
         degree: "B.Tech in CSE",
